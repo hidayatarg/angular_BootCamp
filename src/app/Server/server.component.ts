@@ -3,7 +3,10 @@ import { Component } from "@angular/core";
 
 @Component({
 selector: 'app-server',
-templateUrl:'./server.component.html',
+    template:`
+    <p>
+    The server component
+    </p>`,
 styleUrls: ['./server.component.css']
 })
 
