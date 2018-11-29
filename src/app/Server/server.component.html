@@ -4,6 +4,12 @@
 
 <p>the server {{serverId}} is {{getServiceStatus()}}</p>
 
+<!-- The text box user to enter the server name -->
+
+<input type="text"
+    class="form-control"
+    (input)="onUpdateServerName($event)">
+
 <button class="btn btn-primary" [disabled]="!allowNewServer" (click)="onCreatedServer()">Add server
 </button>
 <!-- <p [innerText]="allowNewServer"></p> -->

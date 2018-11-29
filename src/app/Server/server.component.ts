@@ -35,4 +35,10 @@ export class ServerComponent{
         this.serverCreationStatus= 'Server was created';
     }
 
+    onUpdateServerName(event: any){
+        console.log(event);
+        console.log(event.target.value);
+        
+    }
+
 }
