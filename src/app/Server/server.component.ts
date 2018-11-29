@@ -19,4 +19,15 @@ export class ServerComponent{
     getServiceStatus(){
         return this.sreverStatus;
     }
+
+    allowNewServer=false;
+   
+    constructor() {
+        // Turn on Button 2 sec
+        setTimeout(() => {
+            this.allowNewServer=true;
+        }, 2000);
+        
+    }
+
 }
