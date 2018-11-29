@@ -14,8 +14,9 @@ export class ServerComponent{
     serverId: number = 10;
     sreverStatus: string = 'offline';
     */
-    serverId= 10;
-    sreverStatus='offline';
+    serverId = 10;
+    sreverStatus = 'offline';
+    serverName = '';
     getServiceStatus(){
         return this.sreverStatus;
     }
@@ -34,10 +35,11 @@ export class ServerComponent{
     onCreatedServer(){
         this.serverCreationStatus= 'Server was created';
     }
-
-    onUpdateServerName(event: any){
+    
+    onUpdateServerName(event: Event){
         console.log(event);
-        console.log(event.target.value);
+        this.serverName = (<HTMLInputElement>event.target).value;
+        //Type of html element of this event will be html
         
     }
 
