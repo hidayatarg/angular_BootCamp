@@ -21,6 +21,7 @@ export class ServerComponent{
     }
 
     allowNewServer=false;
+    serverCreationStatus='No server created'
    
     constructor() {
         // Turn on Button 2 sec
@@ -28,6 +29,10 @@ export class ServerComponent{
             this.allowNewServer=true;
         }, 2000);
         
+    }
+
+    onCreatedServer(){
+        this.serverCreationStatus= 'Server was created';
     }
 
 }

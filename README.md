@@ -25,3 +25,7 @@ Event Binding ((event)="expression")
 Combination of both
 
 Two way binding ([ngModel]="data")
+
+#### Event binding
+ (click)="onCreatedServer()"
+ event natype in paranthesisi and the event name
