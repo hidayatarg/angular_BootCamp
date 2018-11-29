@@ -34,3 +34,6 @@ Two way binding ([ngModel]="data")
  ### Directives
  are the instructions in the DOM!
  #### ngIf
+
+
+ ### Marker
