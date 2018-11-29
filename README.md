@@ -29,3 +29,8 @@ Two way binding ([ngModel]="data")
 #### Event binding
  (click)="onCreatedServer()"
  event natype in paranthesisi and the event name
+
+
+ ### Directives
+ are the instructions in the DOM!
+ #### ngIf

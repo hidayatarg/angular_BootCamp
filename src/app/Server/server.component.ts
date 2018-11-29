@@ -16,7 +16,8 @@ export class ServerComponent{
     */
     serverId = 10;
     sreverStatus = 'offline';
-    serverName = 'ServerName for Test';
+    serverName = 'Testserver';
+    serverCreate = false;
     getServiceStatus(){
         return this.sreverStatus;
     }
@@ -34,6 +35,7 @@ export class ServerComponent{
 
     onCreatedServer(){
         this.serverCreationStatus= 'Server was created. Name is ' + this.serverName;
+        this.serverCreate = true;
     }
     
     onUpdateServerName(event: Event){
