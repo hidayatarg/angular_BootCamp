@@ -16,7 +16,7 @@ export class ServerComponent{
     */
     serverId = 10;
     sreverStatus = 'offline';
-    serverName = '';
+    serverName = 'ServerName for Test';
     getServiceStatus(){
         return this.sreverStatus;
     }
