@@ -37,3 +37,6 @@ Two way binding ([ngModel]="data")
 
 
  ### Marker
+
+
+ ng g c recipes/recipe-list --spec false
