@@ -24,3 +24,7 @@
 <ng-template #noServer>
     <p>No Server was created</p>
 </ng-template>
+
+<!-- Style CSS dynamically -->
+
+<p [ngStyle]="{backgroundColor: getColor() }" >{{'server'}} with ID: {{serveId}} is {{getServiceStatus()}}</p>

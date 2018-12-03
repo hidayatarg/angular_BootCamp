@@ -30,6 +30,10 @@ export class ServerComponent{
         setTimeout(() => {
             this.allowNewServer=true;
         }, 2000);
+
+        // random server status
+        this.sreverStatus= Math.random() > 0.5 ? 'online' : 'offline'
+
         
     }
 
@@ -43,6 +47,10 @@ export class ServerComponent{
         this.serverName = (<HTMLInputElement>event.target).value;
         //Type of html element of this event will be html
         
+    }
+
+    getColor(){
+        return this.sreverStatus === 'online' ? 'green' : 'red';
     }
 
 }
